@@ -1,0 +1,17 @@
+
+! 
+! clean most of the modifiers
+clear control
+clear mod4
+
+! -----------------
+! left side
+! ----------------
+! keycode 64 is the left alt key
+keycode 37 = Super_L
+! key code 133 is the left command key
+keycode 133 = Control_L
+
+add mod4 = Super_L
+add control = Control_L
+
