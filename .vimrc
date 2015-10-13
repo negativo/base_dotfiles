@@ -2,7 +2,9 @@ execute pathogen#infect()
 syntax on
 syntax enable
 let g:hybrid_use_iTerm_colors = 1
-colorscheme deepsea
+let g:solarized_termcolors=256
+set background=light
+colorscheme material
 set number
 filetype on
 filetype plugin on
@@ -12,6 +14,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 set fileformat=unix
+set laststatus=2
 set fileformats=unix,dos
 set autoread        
 set encoding=utf-8
@@ -36,4 +39,5 @@ set smartindent     " smarter indent for C-like languages
 set shiftwidth=4    " when reading, tabs are 4 spaces
 set softtabstop=4   " in insert mode, tabs are 4 spaces
 autocmd VimEnter * wincmd p
+autocmd BufWinEnter * NERDTreeMirror
 au BufNewFile,BufRead *.ejs set filetype=html
